@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+$primary-color: #2f3191f3;
+$secondary-color: #000;
+$tertiary-color: #fff;
+$fourth-color: #212529;
+$nav-shadow-color: #bababa;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+html {
+  font-size: 62.5%;
+  cursor: none !important;
+}
+html {
+  --cursor-color: rgb(133, 58, 202) !important;
+}
+::selection {
+  background: $primary-color;
+  color: $tertiary-color;
+}
+body {
+  background: #f8f9fa !important;
+  cursor: none !important;
+}
+h6 {
+  border: 1px solid black;
+  font-size: 1.9rem !important;
+}
+// ****************************************************Scroll Whole Website Start Here**************************************************************
+//Scroll Bar Of Website Design Start Here
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px color-text-butn;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color !important;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color !important;
+}
+//Scroll Bar Of Website Design Ends Here
+// ****************************************************Scroll Whole Website End Here*****************************************************************
+// ****************************************************Navbar Css Starts From Here*******************************************************************
+.main {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.7s;
+  -o-transition: 0.7s all;
+  transition: all 0.7s;
+}
+.main.scrolled {
+  background: $primary-color;
+  position: sticky;
+  color: $primary-color !important;
+  -webkit-box-shadow: 0 1px 4px $nav-shadow-color;
+  box-shadow: 0 1px 4px $nav-shadow-color;
+
+  .nav-link {
+    color: $tertiary-color !important;
+  }
+}
+.nav-link {
+  padding: 10px !important;
+  color: $secondary-color;
+  font-size: 1.7rem !important;
+  &:hover {
+    color: $primary-color !important;
+  }
+}
+.active {
+  color: $primary-color !important;
+}
+.resume_butn {
+  margin-left: 10px !important;
+  background: $primary-color !important;
+  color: $tertiary-color !important;
+  border: none;
+  outline: none;
+  font-size: 1.6rem !important;
+  border-radius: 5px !important;
+  &:hover {
+    color: $tertiary-color !important;
+  }
+}
