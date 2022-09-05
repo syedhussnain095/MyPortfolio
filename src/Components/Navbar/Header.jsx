@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <>
       <div className={main ? "main scrolled" : "main"}>
-        <nav className="navbar navbar-expand-lg pt-4 mt-3">
+        <nav className="navbar col-10 mx-auto navbar-expand-lg pt-4 mt-3">
           <div className="container-fluid mx-5">
             <Link className="navbar-brand fs-3" to="home">
               Hussnain
@@ -101,9 +101,6 @@ const Header = () => {
                   >
                     Contact
                   </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link resume_butn">Resume</Link>
                 </li>
               </ul>
             </div>
